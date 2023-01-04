@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/REST_API_POP/app" isTestSource="false" packagePrefix="App\" />
+      <sourceFolder url="file://$MODULE_DIR$/REST_API_POP/database/factories" isTestSource="false" packagePrefix="Database\Factories\" />
+      <sourceFolder url="file://$MODULE_DIR$/REST_API_POP/database/seeders" isTestSource="false" packagePrefix="Database\Seeders\" />
+      <sourceFolder url="file://$MODULE_DIR$/REST_API_POP/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/vlucas/phpdotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/league/config" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/league/commonmark" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/league/mime-type-detection" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/league/flysystem" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/psr/http-factory" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/psr/http-client" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/spatie/backtrace" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/spatie/ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/spatie/flare-client-php" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/spatie/laravel-ignition" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/theseer/tokenizer" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/deprecation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/polyfill-intl-grapheme" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/css-selector" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/polyfill-intl-normalizer" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/polyfill-php80" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/mailer" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/polyfill-php72" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/dflydev/dot-access-data" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/nunomaduro/termwind" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/nunomaduro/collision" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/uid" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/translation-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/string" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/translation" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/process" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/symfony/polyfill-uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/doctrine/deprecations" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/myclabs/deep-copy" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/brick/math" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/psy/psysh" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/nette/schema" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/nette/utils" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/ramsey/collection" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/ramsey/uuid" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phar-io/version" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phar-io/manifest" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/voku/portable-ascii" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/nikic/php-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/tijsverkoyen/css-to-inline-styles" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/fakerphp/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/laravel/sail" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/laravel/framework" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/laravel/serializable-closure" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/laravel/pint" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/fruitcake/php-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phpoption/phpoption" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/graham-campbell/result-type" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/monolog/monolog" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/type" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/diff" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/lines-of-code" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/nesbot/carbon" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/object-enumerator" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/comparator" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/code-unit" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phpunit/php-code-coverage" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phpunit/php-file-iterator" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/cli-parser" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phpunit/php-invoker" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/version" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phpunit/php-text-template" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/complexity" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phpunit/phpunit" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/recursion-context" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/phpunit/php-timer" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/resource-operations" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/environment" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/global-state" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/code-unit-reverse-lookup" />
+      <excludeFolder url="file://$MODULE_DIR$/REST_API_POP/vendor/sebastian/object-reflector" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
