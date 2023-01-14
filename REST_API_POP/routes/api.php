@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\PeopleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
-    Route::get('/medrek/308772/People', [\App\Http\Controllers\PeopleController::class, 'index']);
-    Route::get('/medrek/308772/People/{tutajid}', [\App\Http\Controllers\PeopleController::class, 'show']);
-    Route::post('/medrek/308772/People', [\App\Http\Controllers\PeopleController::class, 'create']);
-    Route::put('/medrek/308772/People', [\App\Http\Controllers\PeopleController::class, 'update']);
-    Route::delete('/medrek/308772/People', [\App\Http\Controllers\PeopleController::class, 'delete']);
 });
+    Route::apiResource('/Medrek/308772/People',PeopleController::class);
+    Route::get('/Medrek/308772/People', [PeopleController::class, 'index']);
+    Route::get('/Medrek/308772/People/{id}', [PeopleController::class, 'show']);
+    Route::put('/Medrek/308772/People/{id}', [PeopleController::class, 'store']);
+    Route::patch('/Medrek/308772/People/{id}/', [PeopleController::class, 'update']);
+    Route::delete('/Medrek/308772/People/{id}', [PeopleController::class, 'destroy']);
+
