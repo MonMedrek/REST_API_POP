@@ -7,7 +7,6 @@ use Illuminate\Http\JsonResponse;
 use App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input as Input;
-
 class PeopleController extends Controller
 {
     public function index()
@@ -23,7 +22,7 @@ class PeopleController extends Controller
     {
         return response(people::find($id),200);
     }
-    public function store(People $people, $request):JsonResponse
+    public function store(Request $request):JsonResponse
     {
         $people = People::create([
             'name' => $request->input('name'),
@@ -38,13 +37,18 @@ class PeopleController extends Controller
         "data" => $people
         ]);
     }
-    public function update( Request $request,  $id)
+    public function update( Request $request, $id):JsonResponse
     {
-        People::where('id', $id)->update($request->all());
-        return response()->json([
-            "success" => true,
-            "message" => "People List"
-        ]);
+        $people = People::where('id',$id)->update([
+        'name' => $request->input('name'),
+        'surname' => $request->input('surname'),
+       'phone_number' => $request->input('phone_number'),
+        'street' => $request->input('street'),
+        'city' => $request->input('city'),
+        'country' => $request->input('country')]);
+
+        $people->save();
+        return $people;
     }
     public function destroy(People $people, int $id)
     {
