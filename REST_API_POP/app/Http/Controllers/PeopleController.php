@@ -1,89 +1,53 @@
 <?php
-
 namespace App\Http\Controllers;
-
 use App\Models\People;
 use App\Http\Requests\StorePeopleRequest;
 use App\Http\Requests\UpdatePeopleRequest;
 use Illuminate\Http\JsonResponse;
+use App\Http\Resources;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Input as Input;
 
 class PeopleController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index():JsonResponse
+    public function index()
     {
-        return response()->json(People::all(),200);
+        $people = People::all();
+        return response()->json([
+            "success" => true,
+            "message" => "People List",
+            "data" => $people
+        ]);
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create(People $people):JsonResponse
+    public function show(People $people, int $id)
     {
-        return response()->json($people,201);
+        return response(people::find($id),200);
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \App\Http\Requests\StorePeopleRequest  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(StorePeopleRequest $request)
+    public function store(People $people, $request):JsonResponse
     {
-        //
+        $people = People::create([
+            'name' => $request->input('name'),
+            'surname' => $request->input('surname'),
+            'phone_number' => $request->input('phone_number'),
+            'street' => $request->input('street'),
+            'city' => $request->input('city'),
+            'country' => $request->input('country')]);
+        return response()->json([
+        "success" => true,
+        "message" => "People List",
+        "data" => $people
+        ]);
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\People  $people
-     * @return \Illuminate\Http\Response
-     */
-    public function show(People $people):JsonResponse
+    public function update( Request $request,  $id)
     {
-        return response()->json($people,200);
+        People::where('id', $id)->update($request->all());
+        return response()->json([
+            "success" => true,
+            "message" => "People List"
+        ]);
     }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\People  $people
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(People $people)
+    public function destroy(People $people, int $id)
     {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \App\Http\Requests\UpdatePeopleRequest  $request
-     * @param  \App\Models\People  $people
-     * @return \Illuminate\Http\Response
-     */
-    public function update(People $people):JsonResponse
-    {
-
-        return response()->json($people,202);
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\People  $people
-     * @return \Illuminate\Http\Response
-     */
-    public function delete(People $people):JsonResponse
-    {
-
-        return response()->json($people,410);
+        return response(people::destroy($id),200);
     }
 }
